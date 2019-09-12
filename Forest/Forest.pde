@@ -45,15 +45,16 @@ void draw() {
     //Creates an ellipse at a random position and size coincident with the stump.
     ellipse(shiftX, shiftY, canopySize, canopySize);
 
-    //delays the draw function by 1 second.
+    //delays the draw function by 1/10 second.
     delay(100);
 
-    //breaks the loop so that only one tree is drawn every 1 second
+    //breaks the loop so that only one tree is drawn every 1/10 second
     break;
   }
 
   //Once i is equal to 60 and the while loop has stopped executing, displays the word "Tadah!" centered in the x positon.
   if (i==60) {
+    delay(1000);
     textAlign(CENTER, CENTER);
     textSize(20);
     fill(0);
