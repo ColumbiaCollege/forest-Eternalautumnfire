@@ -52,12 +52,13 @@ void draw() {
     break;
   }
 
-  //Once i is equal to 60 and the while loop has stopped executing, displays the word "Tadah!" centered in the x positon.
+  //Once i is equal to 60 and the while loop has stopped executing, displays the word the text centered in the x positon.
   if (i==60) {
     delay(1000);
     textAlign(CENTER, CENTER);
     textSize(20);
     fill(0);
     text("Tadah!", width/2, 100);
+    text("A forest grew! I must be Johnny Appleseed or something!", width/2, 125);
   }
 }
