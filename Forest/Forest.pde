@@ -8,10 +8,12 @@ void setup() {
   fill(#64491F);
   // Rectangle used for ground layer
   rect(0, 500, 1200, 500);
-  //frameRate(5);
 }
+int i = 0;   
+
 void draw() {
-  for (int i = 0; i<60; ) {
+  while (i<60) {
+    i++;
     // Stroke reset to black
     stroke(#463822);
     // Stroke weight reset to 0
@@ -25,10 +27,17 @@ void draw() {
     rect(shiftX, shiftY, 20, 150);
     fill(#42A03C);
     ellipse(shiftX, shiftY, canopySize, canopySize);
-    // if (i>60) {
-    //  redraw();
-    //noLoop();
+    //  if (60<i) {
+    ////redraw();
+    //exit();
     //}
+    delay(100);
     break;
+  }
+  if (i==60) {
+    textAlign(CENTER, CENTER);
+    textSize(20);
+    fill(0);
+      text("Tadah!", 600, 100);
   }
 }
